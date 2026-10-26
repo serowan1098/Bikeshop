@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components & Accessories | Sero'1s SS (Shop)</title>
+    <meta name="description" content="Carbon wheelsets, GPS computers, and accessories at Sero'1s SS (Shop) in the Philippines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="announcement-bar">
+        <div class="container flex-between">
+            <span>Official Slogan: <strong>"You Get What You Pay For."</strong> — Brand Owner: Sir Christian Birot</span>
+            <span>🇵🇭 Philippines | Showroom & Catalog Inquiries</span>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container flex-between">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-name">SERO'1S SS</span>
+                <span class="brand-sub">(SHOP)</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="road-bikes.html">Road Bikes</a></li>
+                    <li><a href="track-bikes.html">Track Bikes</a></li>
+                    <li><a href="racing-kits.html">Racing Kits</a></li>
+                    <li><a href="components.html" class="active">Components</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact / Inquire</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Inquire Now</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container" style="padding: 60px 24px 20px 24px;">
+            <div class="section-header" style="margin-bottom: 40px;">
+                <span class="section-tag">Catalog</span>
+                <h1 class="section-title">Components & Accessories</h1>
+                <p class="section-desc">Carbon wheelsets, GPS cycling computers, titanium multi-tools, and precision upgrades.</p>
+            </div>
+
+            <div class="catalog-toolbar">
+                <div class="search-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" id="catalogSearch" placeholder="Search components & accessories...">
+                </div>
+                <div class="filter-group">
+                    <select id="sortSelect" class="filter-select">
+                        <option value="default">Sort by: Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Alphabetical (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid" data-category="components">
+                <!-- Rendered via JS -->
+            </div>
+
+            <div id="noResultsMsg" style="display: none; text-align: center; padding: 60px; color: var(--gray-mid);">
+                <h3>No components found matching your search.</h3>
+            </div>
+        </div>
+        <div style="height: 80px;"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="brand-logo footer-logo">
+                        <span class="brand-name">SERO'1S SS</span>
+                        <span class="brand-sub">(SHOP)</span>
+                    </div>
+                    <p class="footer-slogan">"You Get What You Pay For."</p>
+                    <p class="footer-desc">Premium bicycles, track machines, racing kits, and high-performance components curated for dedicated riders across the Philippines.</p>
+                    <p class="footer-owner"><strong>Brand Owner:</strong> Sir Christian Birot</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="road-bikes.html">Road Bikes Catalog</a></li>
+                        <li><a href="track-bikes.html">Track Bikes Catalog</a></li>
+                        <li><a href="racing-kits.html">Racing Kits & Apparel</a></li>
+                        <li><a href="components.html">Components & Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="contact.html">Product Inquiries</a></li>
+                        <li><a href="about.html">About Our Philosophy</a></li>
+                        <li><a href="contact.html">Showroom Location & Contact</a></li>
+                        <li><a href="about.html#faq">Inquiry & Buying Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Showroom & Inquiries</h3>
+                    <p>Experience precision engineering and consult with our cycling specialists.</p>
+                    <p><strong>Market:</strong> Philippines</p>
+                    <p class="footer-note">Note: This is an inquiry-only catalog website. No online checkout or payment processing is conducted here.</p>
+                    <a href="contact.html" class="btn btn-outline btn-sm mt-3">Send Product Inquiry</a>
+                </div>
+            </div>
+            <div class="footer-bottom flex-between">
+                <p>&copy; <span id="currentYear"></span> Sero'1s SS (Shop). All rights reserved. Brand Owner: Sir Christian Birot.</p>
+                <p>Designed for Speed, Quality, and Value.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
